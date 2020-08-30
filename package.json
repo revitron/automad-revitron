@@ -1,0 +1,29 @@
+{
+  "name": "automad-revitron",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revitron/automad-revitron.git"
+  },
+  "author": "Marc Anton Dahmen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/revitron/automad-revitron/issues"
+  },
+  "homepage": "https://github.com/revitron/automad-revitron#readme",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^4.0.1",
+    "gulp-remote-src": "^0.4.4",
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.5.1",
+    "merge2": "^1.4.1",
+    "typeface-fira-mono": "0.0.72",
+    "typeface-inter": "^3.15.0"
+  }
+}
