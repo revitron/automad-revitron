@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 		format: { wrapAt: 500 },
 		rebase: false
 	},
-	remoteBase = 'https://raw.githubusercontent.com/revitron/revitron-sphinx-theme/fcef599b6525ac1b748328085f3f3c9629aaea72/';
+	remoteBase = 'https://raw.githubusercontent.com/revitron/revitron-sphinx-theme/e1edf97032c43c662772248690a17860577920f1/';
 
 
 // Error handling to prevent watch task to fail silently without restarting.
