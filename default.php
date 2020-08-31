@@ -7,7 +7,7 @@
 				<div class="rst-content">
 					<@ snippets/breadcrumbs.php @>
 					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-						<div itemprop="articleBody">
+						<div class="blocks" itemprop="articleBody">
 							<@ if @{ ?query } @>
 								<@ snippets/searchresults.php @>
 							<@ else @>
@@ -18,11 +18,7 @@
 					</div>
 					<footer>   
 						<@ snippets/prevnext.php @>
-						<div role="contentinfo">
-							<p>
-								&copy; Copyright @{ author | def (@{ sitename })}
-							</p>
-						</div> 
+						<@ snippets/footernav.php @>
  					</footer>
 				</div>
 			</div>

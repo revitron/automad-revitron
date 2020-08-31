@@ -18,11 +18,7 @@
 				@{ +main }
 			</div>
 			<footer>
-				<div role="contentinfo">
-					<p>
-						&copy; Copyright @{ author | def (@{ sitename })}
-					</p>
-				</div> 
+				<@ snippets/footernav.php @> 
 			</footer>
 		</div>
 	<@ snippets/footer.php @>
