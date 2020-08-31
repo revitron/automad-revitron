@@ -14,7 +14,7 @@
 			</ul>
 		</nav>
 		<div class="container">
-			<div class="rst-content">
+			<div class="rst-content blocks">
 				@{ +main }
 			</div>
 			<footer>
