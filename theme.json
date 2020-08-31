@@ -1,0 +1,18 @@
+{
+	"name": "Revitron",
+	"description": "An elegant documentation theme based on the Revitron Sphinx theme",
+	"author": "Marc Anton Dahmen",
+	"license": "MIT",
+	"tooltips": {
+		"+main": "The main content block area",
+		"brand": "The brand HTML, SVG or text to be used as logo",
+		"imageLogo": "The path to your logo - this variable should be defined globally in the shared data section",
+		"itemsFooter": "Additional markup to be added to page's footer",
+		"itemsHeader": "Additional markup to be added to page's <head></head> section",
+		"metaTitle": "An optional meta title to be used for the browser title bar and links used on Twitter, Facebook or similar social networks",
+		"notificationNoSearchResults": "Notification text for an empty list of search results",
+		"ogImage": "A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg`",
+		"placeholderSearch": "Placeholder text for the search field of the main menu",
+		"urlGithub": "The URL to a related GitHub repository"
+	}
+}
