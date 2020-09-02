@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5 <@ if not @{ ?query } @>@{ :template }<@ end @>" lang="en">
+<html class="writer-html5 <@ if not @{ ?list } @>@{ :template }<@ end @>" lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

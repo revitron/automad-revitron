@@ -1,4 +1,4 @@
-<@ if @{ ?query } @>
+<@ if @{ ?list } @>
 	<@ default.php @>
 <@ else @>
 	<@ snippets/header.php @>

@@ -8,10 +8,11 @@
 					<@ snippets/breadcrumbs.php @>
 					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
 						<div class="blocks" itemprop="articleBody">
-							<@ if @{ ?query } @>
-								<@ snippets/searchresults.php @>
+							<@ if @{ ?list } @>
+								<@ snippets/pagelist.php @>
 							<@ else @>
 								<h1>@{ title }</h1>
+								<@ snippets/date_tags.php @>
 								@{ +main | def(@{ :text }) }
 							<@ end @>
 						</div> 

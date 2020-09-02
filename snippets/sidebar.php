@@ -11,8 +11,9 @@
 				</a>	
 			</div>
 			<div role="search">
-				<form id="rtd-search-form" class="wy-form" action="/" method="get">
-					<input type="text" name="query" placeholder="@{ placeholderSearch | def ('Search') }" />
+				<form id="rtd-search-form" class="wy-form" action="@{ urlPagelist | def ('/') }" method="get">
+					<input type="hidden" name="list" value="1" />
+					<input type="text" name="search" placeholder="@{ placeholderSearch | def ('Search') }" value="@{ ?search }" />
 				</form>
 			</div>
 		</div>
