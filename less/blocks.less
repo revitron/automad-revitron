@@ -15,39 +15,39 @@
 	--am-slider-controls-background: rgba(0,0,0,0.1);
 
 	// Mail
-	--am-mail-input-margin: 5px 0;
-	--am-mail-input-padding: 4px 8px;
+	--am-mail-input-margin: 0.5rem 0;
+	--am-mail-input-padding: 0 0.85rem;
 	--am-mail-input-color: inherit;
 	--am-mail-input-placeholder-color: #CCCCCC;
 	--am-mail-input-background: inherit;
-	--am-mail-input-radius: 5px;
-	--am-mail-input-border: 1px solid #DDDDDD;
+	--am-mail-input-radius: 0;
+	--am-mail-input-border: 2px solid @border;
 	--am-mail-input-hover-color: var(--am-mail-input-color);
 	--am-mail-input-hover-background: var(--am-mail-input-background);
 	--am-mail-input-hover-border: var(--am-mail-input-border);
 	--am-mail-input-focus-color: var(--am-mail-input-color);
 	--am-mail-input-focus-background: var(--am-mail-input-background);
-	--am-mail-input-focus-border: 1px solid #AAAAAA;
+	--am-mail-input-focus-border: 2px solid @text;
 	
 	--am-mail-button-margin: var(--am-mail-input-margin);
-	--am-mail-button-padding: 0 1rem;
-	--am-mail-button-height: 2rem;
-	--am-mail-button-lineheight: 2rem;
+	--am-mail-button-padding: 0 1.5rem;
+	--am-mail-button-height: auto;
+	--am-mail-button-lineheight: 2.6rem;
 	--am-mail-button-radius: var(--am-mail-input-radius);
 	--am-mail-button-color: inherit;
 	--am-mail-button-background: inherit;
 	--am-mail-button-border: var(--am-mail-input-border);
 	--am-mail-button-hover-color: #FFFFFF;
-	--am-mail-button-hover-background: #222222;
-	--am-mail-button-hover-border: 1px solid #222222;
+	--am-mail-button-hover-background: @text;
+	--am-mail-button-hover-border: 2px solid @text;
 
 	// Buttons 
-	--am-button-margin: 3px;
-	--am-button-padding: 0 1.5rem;
+	--am-button-margin: 0.2rem;
+	--am-button-padding: 0 1.75rem;
 	--am-button-font-size: 1.25rem;
-	--am-button-height: 2.75rem;
-	--am-button-lineheight: 2.75rem;
-	--am-button-radius: 100px;
+	--am-button-height: auto;
+	--am-button-lineheight: 2.5;
+	--am-button-radius: 0;
 	--am-button-color: inherit;
 	--am-button-background: inherit;
 	--am-button-border: 2px solid #dfdfdf;
@@ -57,7 +57,7 @@
 
 	--am-button-primary-color: @bg;
 	--am-button-primary-background: @text;
-	--am-button-primary-border: 2px solid;
+	--am-button-primary-border: 2px solid @text;
 	--am-button-primary-hover-color: @text;
 	--am-button-primary-hover-background: @bg;
 	--am-button-primary-hover-border: 2px solid;
@@ -67,7 +67,8 @@
 .blocks {
 
 	p,
-	figure {
+	figure,
+	form {
 		margin-bottom: @margin-rst;
 	}
 
@@ -87,5 +88,128 @@
 		width: 100% !important;
 	}
 
+	.am-mail-form {
+
+		input,
+		textarea {
+
+			font-size: inherit;
+			box-shadow: none;
+			border: var(--am-mail-input-border);
+			transition: all 0.2s;
+
+			&:focus {
+				border-color: var(--am-mail-input-focus-border);
+			}
+		}
+
+		input {
+			line-height: 2.6;
+			padding: var(--am-mail-input-padding);
+		}
+
+		textarea {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			line-height: 1.6;
+			min-height: 10rem;
+		}
+
+		button {
+			border-radius: 0 !important;
+			transition: all 0.2s;
+			font-weight: 700;
+		}
+
+	}
+
+	table {
+
+		width: 100%;
+		max-width: 100%;
+		border-top: 1px solid @border;
+		border-right: 1px solid @border;
+
+		th, 
+		td {
+			vertical-align: top;
+			padding: 0.7rem 0.85rem;
+			line-height: 1.6em;
+			text-align: left;
+			border-left: 1px solid @border;
+		}
+
+		th {
+			border-bottom: 2px solid @border;
+		}
+
+		td {
+			border-bottom: 1px solid @border;
+		}
+
+	}
+
+	& ol,
+	& ul {
+
+		margin: (@margin-rst - 0.25rem) 0;
+		padding-left: 1.15rem;
+
+		li {	
+			padding: 0.25rem 0;
+			line-height: 1.6;
+			list-style-type: disc;
+			list-style-position: outside;
+		}
+
+	}
+
+	& ol > li {	
+		list-style-type: decimal;
+	}
+
+	blockquote {
+
+		margin: 0;
+		padding: 1.1rem 1.25rem;
+		color: @bg;
+		background-color: @text;
+		font-weight: 520;
+
+		& + figcaption {
+
+			padding: 0rem 1.25rem 1.1rem 1.25rem;
+			color: @bg;
+			background-color: @text;
+			font-weight: 520;
+			font-style: italic;
+
+			&:before {
+				content: '—';
+				padding-right: 1rem;
+			}
+
+		}
+
+	}
+
 }
 
+.cdx-list.cdx-list--ordered,
+.cdx-list.cdx-list--unordered {
+
+	margin: (@margin-rst - 0.25rem) 0;
+	padding-left: 1.15rem;
+
+	li {	
+		padding: 0.25rem 0;
+		line-height: 1.6;
+		list-style-type: disc;
+		list-style-position: outside;
+	}
+
+}
+
+.cdx-list.cdx-list--ordered li {
+	list-style-type: decimal;
+}
