@@ -16,7 +16,7 @@ The following variables are available:
 
 | Name | Description |
 | --- | --- |
-| +main | The main content block area |
+| + Main | The main content block area |
 | Brand | The brand HTML, SVG or text to be used as logo |
 | Image Logo | The path to your logo - this variable should be defined globally in the shared data section |
 | Image Logo Mobile | An alternative logo for smaller devices |
