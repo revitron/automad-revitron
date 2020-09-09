@@ -1,4 +1,4 @@
-# Automad Revitron
+# Revitron Automad Theme
 
 This theme is an Automad port of the [Revitron Sphinx theme](https://github.com/revitron/revitron-sphinx-theme). Check out the Revitron [documentation](https://revitron.readthedocs.io/) as a live demo. Note that this port might differ from the original Sphinx theme in small details.
 
