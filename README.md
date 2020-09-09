@@ -5,10 +5,9 @@ This theme is an Automad port of the [Revitron Sphinx theme](https://github.com/
 ## Templates
 
 This theme provides two different templates &mdash; a [default](https://revitron.readthedocs.io/en/latest/get-started.html) including a sidebar navigation and a [landing page](https://revitron.readthedocs.io/) template. 
+Content can be added and edited using the block editor. 
 
-## Content Editing
-
-Content can be added and edited using the block editor. Due to the layout of this theme, all full-width options for blocks are disabled on purpose.
+> Due to the layout of this theme, all full-width options for blocks are disabled on purpose.
 
 ## Options
 
