@@ -20,11 +20,11 @@ The following variables are available:
 | Image Logo | The path to your logo - this variable should be defined globally in the shared data section |
 | Image Logo Mobile | An alternative logo for smaller devices |
 | Items Footer | Additional markup to be added to page's footer |
-| Items Header | Additional markup to be added to page's <head></head> section |
+| Items Header | Additional markup to be added to page's `<head></head>` section |
 | Format Date | The format for displaying the date |
-| Label More | Label text for the \ |More\" button",
+| Label More | Label text for the "More" button |
 | Label Show All | Label text for filter button when no filter is selected |
-| Locale | The locale information to format date and time according to like 'en_EN' or 'de_DE' |
+| Locale | The locale information to format date and time according to like `en_EN` or `de_DE` |
 | Meta Title | An optional meta title to be used for the browser title bar and links used on Twitter, Facebook or similar social networks |
 | Notification No Search Results | Notification text for an empty list of search results |
 | Og Image | A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg` |
