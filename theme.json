@@ -7,6 +7,7 @@
 		"+main": "The main content block area",
 		"brand": "The brand HTML, SVG or text to be used as logo",
 		"imageLogo": "The path to your logo - this variable should be defined globally in the shared data section",
+		"imageLogoMobile": "An alternative logo for smaller devices",
 		"itemsFooter": "Additional markup to be added to page's footer",
 		"itemsHeader": "Additional markup to be added to page's <head></head> section",
 		"formatDate": "The format for displaying the date",
