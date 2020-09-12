@@ -13,7 +13,7 @@
 							<@ else @>
 								<h1>@{ title }</h1>
 								<@ snippets/date_tags.php @>
-								@{ +main | def(@{ :text }) }
+								@{ +main }
 							<@ end @>
 						</div> 
 					</div>
