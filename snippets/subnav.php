@@ -3,25 +3,33 @@
 namespace Automad\Core;
 
 $Page = $Automad->Context->get();
-$html = Blocks::render($Page->get('+main'), $Automad);
+$main = json_decode($Page->get('+main'));
 $output = '';
 
-preg_match_all('/\<h2\sid\=\"([\w\-]+)\"\>(.+?)\<\/h2\>/is', $html, $matches, PREG_SET_ORDER);
+if (!empty($main) && !empty($main->blocks)) {
 
-if (!empty($matches)) {
+	foreach($main->blocks as $block) {
 
-	$output .= '<ul class="current subnav">';
+		if (($block->type == 'header') && isset($block->data->level) && ($block->data->level == 2)) {
 
-	foreach ($matches as $match) {
-		$output .= '<li class="toctree-l' . strval(intval($Page->get(':level')) + 1) . '">' . 
-						'<a href="#' . $match[1] . '" class="reference internal"><span>‒ &nbsp;' . $match[2] . '</span></a>' . 
-					'</li>';
+			$id = Str::sanitize($block->data->text, true);
+			$level = strval(intval($Page->get(':level')) + 1);
+			$output .= <<< HTML
+						<li class="toctree-l$level"> 
+							<a href="#$id" class="reference internal">
+								<span>‒ &nbsp;{$block->data->text}</span>
+							</a> 
+						</li>
+
+HTML;
+			
+		}
 	}
-
-	$output .= '</ul>';
 
 }
 
-echo $output;
+if ($output) {
+	echo '<ul class="current subnav">' . $output . '</ul>';
+}
 
 ?>
