@@ -25,11 +25,8 @@ var onError = function(err) {
 gulp.task('fonts', function() {
 	
 	return 	gulp.src([
-				'node_modules/typeface-inter/Inter Web/Inter.var.woff2',
-				'node_modules/typeface-inter/Inter Web/Inter-italic.var.woff2',
-				'node_modules/typeface-fira-mono/files/fira-mono-latin-400.woff2',
-				'node_modules/typeface-fira-mono/files/fira-mono-latin-500.woff2',
-				'node_modules/typeface-fira-mono/files/fira-mono-latin-700.woff2',
+				'node_modules/typeface-inter/Inter Web/Inter-*.var.woff2',
+				'node_modules/typeface-fira-mono/files/fira-mono-latin-*.woff2',
 				'node_modules/font-awesome/fonts/fontawesome-webfont.*'
 			])
 			.pipe(gulp.dest('dist/fonts'));
