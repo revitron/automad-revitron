@@ -3,7 +3,9 @@
 	"description": "An elegant documentation theme for Automad based on the Revitron Sphinx theme",
 	"type": "automad-package",
 	"keywords": [
-		"theme"
+		"theme",
+		"blog",
+		"documentation"
 	],
 	"license": "MIT",
 	"authors": [
