@@ -3,6 +3,20 @@
 	"description": "An elegant documentation theme based on the Revitron Sphinx theme",
 	"author": "Marc Anton Dahmen",
 	"license": "MIT",
+	"masks": {
+		"page": [
+			"labelMore",
+			"labelShowAll",
+			"notificationNoSearchResults",
+			"placeholderSearch",
+			"searchResultsTitle",
+			"urlGithub",
+			"urlPagelist"
+		],
+		"shared": [
+			"+main"
+		]
+	},
 	"tooltips": {
 		"+main": "The main content block area",
 		"brand": "The brand HTML, SVG or text to be used as logo",
@@ -18,6 +32,7 @@
 		"notificationNoSearchResults": "Notification text for an empty list of search results",
 		"ogImage": "A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg`",
 		"placeholderSearch": "Placeholder text for the search field of the main menu",
+		"searchResultsTitle": "The title for the search results page",
 		"urlGithub": "The URL to a related GitHub repository",
 		"urlPagelist": "The URL for the search results page"
 	}
