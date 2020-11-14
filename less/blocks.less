@@ -66,32 +66,38 @@
 
 .blocks {
 
-	p,
-	figure,
-	form {
+	& p,
+	& figure,
+	& section,
+	& form {
 		margin-bottom: @margin-rst;
 	}
 
-	.am-paragraph-large {
+	& figure img + figcaption {
+		display: block;
+		margin-top: 0.75rem;
+	}
+
+	& .am-paragraph-large {
 		font-size: 1.5rem;
 		line-height: 1.5;
 		font-weight: 500;
 	}
 
-	.am-buttons .am-button {
+	& .am-buttons .am-button {
 		font-weight: 700;
 		transition: all 0.2s;
 	}
 	
-	.am-gallery-img-small img {
+	& .am-gallery-img-small img {
 		height: 100% !important;
 		width: 100% !important;
 	}
 
-	.am-mail-form {
+	& .am-mail-form {
 
-		input,
-		textarea {
+		& input,
+		& textarea {
 
 			font-size: inherit;
 			box-shadow: none;
@@ -103,19 +109,19 @@
 			}
 		}
 
-		input {
+		& input {
 			line-height: 2.6;
 			padding: var(--am-mail-input-padding);
 		}
 
-		textarea {
+		& textarea {
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
 			line-height: 1.6;
 			min-height: 10rem;
 		}
 
-		button {
+		& button {
 			border-radius: 0 !important;
 			transition: all 0.2s;
 			font-weight: 700;
@@ -123,15 +129,15 @@
 
 	}
 
-	table {
+	& table {
 
 		width: 100%;
 		max-width: 100%;
 		border-top: 1px solid @border;
 		border-right: 1px solid @border;
 
-		th, 
-		td {
+		& th, 
+		& td {
 			vertical-align: top;
 			padding: 0.7rem 0.85rem;
 			line-height: 1.6em;
@@ -139,11 +145,11 @@
 			border-left: 1px solid @border;
 		}
 
-		th {
+		& th {
 			border-bottom: 2px solid @border;
 		}
 
-		td {
+		& td {
 			border-bottom: 1px solid @border;
 		}
 
@@ -155,9 +161,15 @@
 		margin: @margin-rst 0;
 		padding: 0;
 
-		li {	
-			margin: 0 0 0 2rem;
-			padding: 0 0 0 0.3rem;
+		& ol,
+		& ul {
+			margin: 0;
+			padding: 0.25rem 0;
+		}
+
+		& li {	
+			margin: 0 0 0 1.25rem;
+			padding: 0;
 			line-height: 1.6;
 			list-style-type: disc;
 			list-style-position: outside;
@@ -165,11 +177,19 @@
 
 	}
 
+	& ul li {
+		margin-left: 2.25rem;
+	}
+
+	& ul ul li {
+		margin-left: 1.75rem;
+	}
+
 	& ol > li {	
 		list-style-type: decimal;
 	}
 
-	blockquote {
+	& blockquote {
 
 		margin: 0;
 		padding: 1.1rem 1.25rem;
@@ -202,7 +222,7 @@
 	margin: (@margin-rst - 0.25rem) 0;
 	padding-left: 1.15rem;
 
-	li {	
+	& li {	
 		padding: 0.25rem 0;
 		line-height: 1.6;
 		list-style-type: disc;
