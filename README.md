@@ -12,7 +12,6 @@ Content can be added and edited using the block editor.
 > Due to the layout of this theme, all full-width options for blocks are disabled on purpose.
 
 ![](https://raw.githubusercontent.com/marcantondahmen/media-files/master/themes/revitron/landing.png)
-
 ![](https://raw.githubusercontent.com/marcantondahmen/media-files/master/themes/revitron/mobile.png)
 
 ## Options
