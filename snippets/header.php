@@ -17,7 +17,7 @@
 		twitterCard: 'summary_large_image'
 	} ~@>
 	<link rel="stylesheet" href="/packages/@{ theme }/dist/revitron.min.css" type="text/css" />
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/@{ syntaxTheme | def('mono-blue') }.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/@{ syntaxTheme | def('ascetic') }.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 	@{ itemsHeader }

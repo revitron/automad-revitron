@@ -36,6 +36,6 @@ The following variables are available:
 | Og Image | A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg` | - |
 | Placeholder Search | Placeholder text for the search field of the main menu | Shared |
 | Search Results Title | The title for the search results page | Shared |
-| Syntax Theme | The name of the syntax theme for [highlight.js](https://highlightjs.org/static/demo/) like for example 'mono-blue'. | Shared |	
+| Syntax Theme | The name of the syntax theme for [highlight.js](https://highlightjs.org/static/demo/), the default is 'ascetic'. | Shared |	
 | Url Github | The URL to a related GitHub repository | Shared |
 | Url Pagelist | The URL for the search results page | Shared |
