@@ -19,21 +19,23 @@ Content can be added and edited using the block editor.
 
 The following variables are available:
 
-| Name | Description |
-| --- | --- |
-| + Main | The main content block area |
-| Brand | The brand HTML, SVG or text to be used as logo |
-| Image Logo | The path to your logo - this variable should be defined globally in the shared data section |
-| Image Logo Mobile | An alternative logo for smaller devices |
-| Items Footer | Additional markup to be added to page's footer |
-| Items Header | Additional markup to be added to page's `<head></head>` section |
-| Format Date | The format for displaying the date |
-| Label More | Label text for the "More" button |
-| Label Show All | Label text for filter button when no filter is selected |
-| Locale | The locale information to format date and time according to like `en_EN` or `de_DE` |
-| Meta Title | An optional meta title to be used for the browser title bar and links used on Twitter, Facebook or similar social networks |
-| Notification No Search Results | Notification text for an empty list of search results |
-| Og Image | A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg` |
-| Placeholder Search | Placeholder text for the search field of the main menu |
-| Url Github | The URL to a related GitHub repository |
-| Url Pagelist | The URL for the search results page |
+| Name | Description | Scope |
+| --- | --- | --- |
+| + Main | The main content block area | Page |
+| Brand | The brand HTML, SVG or text to be used as logo | - |
+| Image Logo | The path to your logo - this variable should be defined globally in the shared data section | - |
+| Image Logo Mobile | An alternative logo for smaller devices | - |
+| Items Footer | Additional markup to be added to page's footer | - |
+| Items Header | Additional markup to be added to page's `<head></head>` section | - |
+| Format Date | The format for displaying the date | - |
+| Label More | Label text for the "More" button | Shared |
+| Label Show All | Label text for filter button when no filter is selected | Shared |
+| Locale | The locale information to format date and time according to like `en_EN` or `de_DE` | - |
+| Meta Title | An optional meta title to be used for the browser title bar and links used on Twitter, Facebook or similar social networks | - |
+| Notification No Search Results | Notification text for an empty list of search results | Shared |
+| Og Image | A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg` | - |
+| Placeholder Search | Placeholder text for the search field of the main menu | Shared |
+| Search Results Title | The title for the search results page | Shared |
+| Syntax Theme | The name of the syntax theme for [highlight.js](https://highlightjs.org/static/demo/) like for example 'mono-blue'. | Shared |	
+| Url Github | The URL to a related GitHub repository | Shared |
+| Url Pagelist | The URL for the search results page | Shared |

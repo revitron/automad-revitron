@@ -10,6 +10,7 @@
 			"notificationNoSearchResults",
 			"placeholderSearch",
 			"searchResultsTitle",
+			"syntaxTheme",
 			"urlGithub",
 			"urlPagelist"
 		],
@@ -33,6 +34,7 @@
 		"ogImage": "A glob pattern to select a preview image for Twitter, Facebook or similar social network cards. This could be for example `*.png, *.jpg`",
 		"placeholderSearch": "Placeholder text for the search field of the main menu",
 		"searchResultsTitle": "The title for the search results page",
+		"syntaxTheme": "The name of the syntax theme for <a href='https://highlightjs.org/static/demo/' style='color: inherit; text-decoration: underline !important;'>highlight.js</a> like for example 'mono-blue'",
 		"urlGithub": "The URL to a related GitHub repository",
 		"urlPagelist": "The URL for the search results page"
 	}
