@@ -6,10 +6,7 @@ This theme is an [Automad](https://automad.org) port of the [Revitron Sphinx the
 
 ## Templates
 
-This theme provides two different templates &mdash; a [default](https://revitron.readthedocs.io/en/latest/get-started.html) including a sidebar navigation and a [landing page](https://revitron.readthedocs.io/) template. 
-Content can be added and edited using the block editor. 
-
-> Due to the layout of this theme, all full-width options for blocks are disabled on purpose.
+This theme provides two different templates &mdash; a [default](https://revitron.readthedocs.io/en/latest/get-started.html) including a sidebar navigation and a [landing page](https://revitron.readthedocs.io/) template. Content can be added and edited using the block editor. 
 
 ![](https://raw.githubusercontent.com/marcantondahmen/media-files/master/themes/revitron/landing.png)
 ![](https://raw.githubusercontent.com/marcantondahmen/media-files/master/themes/revitron/mobile.png)
