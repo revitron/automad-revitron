@@ -1,7 +1,7 @@
 <@ if @{ ?list } @>
 	<@ default.php @>
 <@ else @>
-	<@ snippets/header.php @>
+	<@ elements/header.php @>
 		<nav class="navbar">
 			<ul>
 				<@ newPagelist { type: 'children', context: '/' } @>
@@ -18,9 +18,9 @@
 				@{ +main }
 			</div>
 			<footer>
-				<@ snippets/footernav.php @> 
+				<@ elements/footernav.php @> 
 			</footer>
 		</div>
-	<@ snippets/footer.php @>
+	<@ elements/footer.php @>
 <@ end @>
 

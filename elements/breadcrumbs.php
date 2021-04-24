@@ -1,4 +1,4 @@
-<div role="navigation" aria-label="breadcrumbs navigation">
+<div role="navigation" aria-label="breadcrumbs navigation" class="am-block">
 	<ul class="wy-breadcrumbs">
 		<@ newPagelist { type: 'breadcrumbs' } @>
 		<@ foreach in pagelist @>

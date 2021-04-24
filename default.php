@@ -1,25 +1,25 @@
-<@ snippets/header.php @>
+<@ elements/header.php @>
 	<div class="wy-grid-for-nav">	
-		<@ snippets/sidebar.php @>
+		<@ elements/sidebar.php @>
 		<section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-			<@ snippets/navbar.php @>
+			<@ elements/navbar.php @>
 			<div class="wy-nav-content">
 				<div class="rst-content">
-					<@ snippets/breadcrumbs.php @>
+					<@ elements/breadcrumbs.php @>
 					<div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
 						<div class="blocks" itemprop="articleBody">
 							<@ if @{ ?list } @>
-								<@ snippets/pagelist.php @>
+								<@ elements/pagelist.php @>
 							<@ else @>
 								<h1>@{ title }</h1>
-								<@ snippets/date_tags.php @>
+								<@ elements/date_tags.php @>
 								@{ +main }
 							<@ end @>
 						</div> 
 					</div>
 					<footer>   
-						<@ snippets/prevnext.php @>
-						<@ snippets/footernav.php @>
+						<@ elements/prevnext.php @>
+						<@ elements/footernav.php @>
  					</footer>
 				</div>
 			</div>
@@ -31,4 +31,4 @@
 			SphinxRtdTheme.Navigation.enable(true);
 		});
 	</script>							
-<@ snippets/footer.php @>
+<@ elements/footer.php @>
