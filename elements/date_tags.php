@@ -1,6 +1,6 @@
 <@ if @{ tags } or @{ date } @>
 	<p>
-		@{ date | dateFormat (@{ formatDate | def ('l, F jS Y') }, @{ locale }) }
+		@{ date | dateFormat (@{ formatDate | def ('M jS Y') }, @{ locale }) }
 		<@ if @{ tags } and @{ date } @>&mdash;<@ end @>
 		<@ foreach in tags ~@>
 			<@ if @{ :i } > 1 @>, <@ end ~@>
