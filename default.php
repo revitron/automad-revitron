@@ -17,11 +17,11 @@
 							<@ end @>
 						</div> 
 					</div>
-					<footer>   
-						<@ elements/prevnext.php @>
-						<@ elements/footernav.php @>
- 					</footer>
 				</div>
+				<footer>
+					<@ elements/prevnext.php @>
+					<@ elements/footernav.php @>
+				</footer>
 			</div>
 		</section>
 	</div>
