@@ -3,7 +3,11 @@
 	// Container
 	--am-block-max-width: 100%;
 	--am-block-margin-top: 2em;
-	--am-container-padding: 2.5em;
+	--am-container-padding: 1.25rem;
+
+	@media (min-width: 1020px) {
+		--am-container-padding: 2.5rem;
+	}
 
 	// Flex
 	--am-flex-gap: 2rem;
@@ -24,32 +28,24 @@
 	--am-slider-controls-background: rgba(0,0,0,0.1);
 
 	// Form and buttons
-	--am-input-border-radius: 0;
-	--am-button-border-radius: 0;
+	--am-input-padding: 0.8em 1em;
+	--am-input-border-radius: 0.5rem;
+	--am-input-color: @text;
+	--am-input-border: @border;
+	--am-input-hover-color: @text;
+	--am-input-hover-border: @border;
+	--am-input-focus-color: @text;
+	--am-input-focus-border: @text;
+	--am-input-placeholder-color: @muted;
+	--am-button-border-radius: 0.5rem;
+	--am-button-border-color: @border;
+	--am-button-hover-border-color: @muted;
 
 }
 
 .blocks {
 
-	& p,
-	& figure,
-	& section,
-	& form {
-		margin-bottom: @margin-rst;
-	}
-
-	& figure img + figcaption {
-		display: block;
-		margin-top: 0.75rem;
-	}
-
-	& .am-paragraph-large {
-		font-size: 1.5rem;
-		line-height: 1.5;
-		font-weight: 500;
-	}
-
-	& .am-buttons .am-button {
+	& .am-button {
 		font-weight: 700;
 		transition: all 0.2s;
 	}
@@ -57,41 +53,6 @@
 	& .am-gallery-img-small img {
 		height: 100% !important;
 		width: 100% !important;
-	}
-
-	& .am-mail-form {
-
-		& input,
-		& textarea {
-
-			font-size: inherit;
-			box-shadow: none;
-			border: var(--am-mail-input-border);
-			transition: all 0.2s;
-
-			&:focus {
-				border-color: var(--am-mail-input-focus-border);
-			}
-		}
-
-		& input {
-			line-height: 2.6;
-			padding: var(--am-mail-input-padding);
-		}
-
-		& textarea {
-			padding-top: 0.5rem;
-			padding-bottom: 0.5rem;
-			line-height: 1.6;
-			min-height: 10rem;
-		}
-
-		& button {
-			border-radius: 0 !important;
-			transition: all 0.2s;
-			font-weight: 700;
-		}
-
 	}
 
 	& table {
@@ -158,15 +119,15 @@
 
 		margin: 0;
 		padding: 1.1rem 1.25rem;
-		color: @bg;
-		background-color: @text;
+		color: var(--info-text);
+		background-color: var(--info-bg);
 		font-weight: 520;
 
 		& + figcaption {
 
 			padding: 0rem 1.25rem 1.1rem 1.25rem;
-			color: @bg;
-			background-color: @text;
+			color: var(--info-text);
+			background-color: var(--info-bg);
 			font-weight: 520;
 			font-style: italic;
 
@@ -179,7 +140,12 @@
 
 	}
 
-	& pre code {
+	& pre {
+		padding: 0 !important;
+	}
+
+	& pre > code {
+		padding: 1.05rem 1.25rem;
 		white-space: pre;
 	}
 
@@ -191,7 +157,7 @@
 	margin: (@margin-rst - 0.25rem) 0;
 	padding-left: 1.15rem;
 
-	& li {	
+	& li {
 		padding: 0.25rem 0;
 		line-height: 1.6;
 		list-style-type: disc;
@@ -219,19 +185,19 @@ am-mail {
 		color: var(--am-input-color);
 		background-color: var(--am-input-background);
 		border-radius: var(--am-input-border-radius);
-		border: var(--am-input-border);
+		border: 2px solid var(--am-input-border);
 		box-shadow: none;
 
 		&:hover {
 			color: var(--am-input-hover-color);
 			background-color: var(--am-input-hover-background);
-			border: var(--am-input-hover-border);
+			border: 2px solid var(--am-input-hover-border);
 		}
 
 		&:focus {
 			color: var(--am-input-focus-color);
 			background-color: var(--am-input-focus-background);
-			border: var(--am-input-focus-border);
+			border: 2px solid var(--am-input-focus-border);
 			outline: none;
 		}
 
@@ -247,6 +213,37 @@ am-mail {
 
 	& textarea {
 		min-height: 10rem;
+	}
+
+}
+
+.rst-content am-pagelist {
+
+	& > article {
+
+		& + * {
+			margin-top: 2.5rem !important;
+		}
+
+		& > h3 {
+			margin: 0 !important;
+		}
+
+		& > * + * {
+			margin: 0.75em 0 0 0 !important;
+		}
+
+		& > a {
+
+			display: block;
+			font-weight: 700;
+
+			&:hover {
+				color: @muted;
+			}
+
+		} 
+
 	}
 
 }
