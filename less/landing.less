@@ -1,0 +1,29 @@
+.landing {
+
+	& > body > .container {
+
+		max-width: 80rem;
+		--am-block-max-width: 49rem;
+
+		@media (min-width: 1020px) {
+			--am-block-max-width: 47rem;
+		}
+		
+	}
+
+	& .navbar {
+
+		& ::-webkit-scrollbar {
+			display: none;
+		}
+
+		& ul {
+
+			& li {
+				white-space: nowrap;
+			}
+		}
+
+	}
+
+}
