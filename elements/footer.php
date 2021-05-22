@@ -1,5 +1,3 @@
 
-				 		
-	@{ itemsFooter }
 </body>
 </html>

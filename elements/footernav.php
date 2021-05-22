@@ -12,3 +12,5 @@
 		<@ end @>
 	</ul>
 </nav>
+
+@{ itemsFooter }

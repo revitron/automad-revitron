@@ -17,7 +17,7 @@
 			<div class="rst-content blocks">
 				@{ +main }
 			</div>
-			<footer>
+			<footer class="am-block">
 				<@ elements/footernav.php @> 
 			</footer>
 		</div>
