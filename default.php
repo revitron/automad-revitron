@@ -25,7 +25,7 @@
 			</div>
 		</section>
 	</div>
-	<script type="text/javascript" src="/packages/@{ theme }/dist/script.min.js"></script>
+	<script type="text/javascript" src="/packages/revitron/automad-revitron/dist/script.min.js"></script>
 	<script type="text/javascript">
 		jQuery(function () {
 			SphinxRtdTheme.Navigation.enable(true);
