@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5 @{ theme | replace('/[^a-z]/', ' ') }<@ if not @{ ?list } @> @{ :template }<@ end @>" lang="en">
+<html class="writer-html5 @{ theme | replace('/[^a-z]/', ' ') }<@ if not @{ ?list } @> @{ :template | def(@{ template }) }<@ end @>" lang="en">
 <head>
 	<?php if (substr(AM_VERSION, 0, 1) == '1') { ?>
 		<meta charset="utf-8">
