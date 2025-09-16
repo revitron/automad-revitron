@@ -22,7 +22,7 @@
 		<script>hljs.initHighlightingOnLoad();</script>
 	<?php } ?>
 	<link rel="stylesheet" href="/packages/revitron/automad-revitron/dist/revitron.min.css" type="text/css" />
-	@{ customProperties | replace ('/^(.+)$/', '<style>:root{$1}</style>') }
+	@{ customProperties | replace ('/^(.+)$/s', '<style>:root, html.dark {$1}</style>') }
 	@{ itemsHeader }
 </head>
 
